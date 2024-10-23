@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm của chúng tôi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="images/hihi.jpg" alt="Nhóm">
+            <span class="group-name">Tên Nhóm</span>
+        </div>
+        <div>
+          <nav>
+              <button onclick="showInfo()">Giới thiệu</button>
+              <button onclick="showMovies()">Phim</button>
+              <button onclick="showMembers()">Thành viên</button>
+          </nav>
+      </div>
+    </header>
+
+    <section class="poster">
+      <img src="images/hihi.jpg" alt="Nhóm ảnh">
+    </section>
+
+    <section class="description">
+        <img src="images/hihi.jpg" alt="Nhóm ảnh">
+        <p>Mô tả về nhóm ở đây</p>
+    </section>
+
+    <section class="video-container">
+        <video controls>
+            <source src="video/huhu.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </section>
+
+    <section class="member-images">
+        <img src="images/hihi.jpg" alt="Thành viên 1">
+        <img src="images/hihi.jpg" alt="Thành viên 2">
+        <img src="images/hihi.jpg" alt="Thành viên 3">
+        <img src="images/hihi.jpg" alt="Thành viên 4">
+        <img src="images/hihi.jpg" alt="Thành viên 5">
+    </section>
+
+    <footer>
+        <p>Địa chỉ: Số 123, Đường ABC, Thành phố XYZ</p>
+        <p>Tên dự án: Dự án ABC</p>
+        <p>Giảng viên hướng dẫn: Thầy Nguyễn Văn A</p>
+        <p>Số điện thoại: 0123 456 789</p>
+    </footer>
+
+    <script>
+        function showInfo() {
+            alert("Thông tin về nhóm sẽ được hiển thị tại đây.");
+        }
+        
+        function showMovies() {
+            alert("Danh sách phim sẽ được hiển thị tại đây.");
+        }
+
+        function showMembers() {
+            alert("Danh sách thành viên sẽ được hiển thị tại đây.");
+        }
+    </script>
+</body>
+</html>

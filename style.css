@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b; /* Nền tối đen đậm */
+  color: #e1e1e1; /* Màu chữ sáng hơn một chút */
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2a2a2a; /* Xám đậm cho header */
+}
+header img {
+  height: 50px;
+}
+header .group-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c; /* Màu đỏ máu cho tên nhóm */
+}
+nav {
+  display: flex;
+}
+nav button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #8b0000; /* Đỏ đậm cho nút */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+nav button:hover {
+  background-color: #d73030; /* Đỏ sáng hơn khi hover */
+  transform: scale(1.05);
+}
+.poster {
+  width: 100%;
+  background-color: #333; /* Màu xám đen tối hơn cho poster */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.description {
+  margin-top: 20px;
+  display: flex;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.description img {
+  width: 40%;
+  margin-right: 20px;
+}
+.description p {
+  flex-grow: 1;
+  color: #d1d1d1; /* Màu xám nhạt hơn cho mô tả */
+}
+.video-container {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  background-color: #2e2e2e; /* Nền xám đậm cho video */
+  padding: 20px;
+  border-radius: 10px;
+}
+.video-container video {
+  width: 80%;
+  height: auto;
+}
+.member-images {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #2a2a2a; /* Nền tối cho ảnh thành viên */
+}
+.member-images img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #8b0000; /* Viền đỏ đậm cho ảnh thành viên */
+}
+footer {
+  background-color: #2a2a2a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+footer p {
+  margin: 10px 0;
+  color: #e74c3c; /* Màu đỏ máu cho chữ ở footer */
+}
