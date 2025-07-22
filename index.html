@@ -1,125 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhóm của chúng tôi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vòng Quay Bi Sắt - Dự Án STEM</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fefefe;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        header {
+            background-color: #fff7c2;
+            padding: 30px 20px;
+            text-align: center;
+            color: #4b3800;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 2.4em;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.6em;
+            font-style: italic;
+        }
+
+        .official-link {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .official-link a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .official-link a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .content h3 {
+            font-size: 1.9em;
+            color: #d88a00;
+        }
+
+        .resources h4 {
+            margin-top: 30px;
+            color: #2a5d84;
+            font-size: 1.4em;
+        }
+
+        .resources p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .resources ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .resources ul li a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .resources ul li a:hover {
+            text-decoration: underline;
+            color: #005999;
+        }
+
+        .image-container {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 70%; /* Giảm kích thước hình ảnh xuống 70% */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        .advertisement {
+            background-color: #fffae6;
+            border-left: 5px solid #ffd700;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #704c00;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #ffdd66;
+            color: #333;
+            text-align: center;
+            padding: 15px;
+            font-size: 1em;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1, header h2 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .advertisement {
+                font-size: 1em;
+            }
+
+            .image-container img {
+                max-width: 90%; /* Hình ảnh lớn hơn một chút trên màn hình nhỏ */
+            }
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <div>
-            <img src="images/backgrounds.jpg" alt="Nhóm">
-            <span class="group-name">Bước qua nước mắt</span>
+        <div class="official-link">
+            🔗 Truy cập trang chính thức của chúng tôi tại:
+            <a href="https://inventor-lab-store.vercel.app/signup" target="_blank">https://inventor-lab-store.vercel.app/signup</a>
         </div>
-        <div>
-          <nav>
-              <button onclick="showInfo()">Giới thiệu</button>
-              <button onclick="showMovies()">Phim</button>
-              <button onclick="showMembers()">Thành viên</button>
-          </nav>
-      </div>
+        <h1>TRANG HƯỚNG DẪN SẢN PHẨM - THIẾT BỊ IOT</h1>
+        <h2>Dự Án: VÒNG QUAY BI SẮT SÁNG TẠO</h2>
     </header>
 
-    <section class="poster">
-      <img src="images/backgrounds.jpg" alt="Nhóm ảnh">
-    </section>
+    <div class="content">
+        <h3>📘 Tài Liệu Hướng Dẫn Dự Án</h3>
+        <div class="resources">
+            <h4>🟦 Cảm Biến Siêu Âm (HC-SR04)</h4>
+            <p>Thiết bị đo khoảng cách bằng sóng siêu âm, giúp hệ thống nhận biết khoảng cách của viên bi so với cảm biến. Khi được tích hợp với Arduino, cảm biến này trở thành một phần quan trọng giúp vòng quay phản ứng theo thời gian thực.</p>
+            <div class="image-container"><img src="cam-bien-sieu-am-hc-sr04.jpg" alt="Cảm biến siêu âm"></div>
+            <ul>
+                <li><a href="https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/" target="_blank">👉 Hướng dẫn chi tiết</a></li>
+            </ul>
 
-    <section class="description">
-        <img src="images/hihi.jpg" alt="Nhóm ảnh">
-        <p>Mô tả về nhóm ở đây</p>
-    </section>
+            <h4>🟥 Relay Module</h4>
+            <p>Relay giống như một công tắc điện tử, cho phép điều khiển thiết bị công suất cao như đèn LED, động cơ,... bằng tín hiệu từ Arduino. Đảm bảo an toàn khi kết nối mạch điều khiển với thiết bị thực.</p>
+            <div class="image-container"><img src="module-1-relay-voi-opto-cach-ly-kich-h-l-5vdc-rn5i-4-scaled.jpg" alt="Relay"></div>
+            <ul>
+                <li><a href="https://www.build-electronic-circuits.com/how-a-relay-works/" target="_blank">👉 Cách kết nối & điều khiển</a></li>
+            </ul>
 
-    <section class="video-container">
-        <video controls>
-            <source src="video/huhu.mp4" type="video/mp4">
-            Trình duyệt của bạn không hỗ trợ video.
-        </video>
-    </section>
+            <h4>🟩 Cảm Biến Hồng Ngoại (IR)</h4>
+            <p>IR là cảm biến phát hiện vật thể dựa vào tia hồng ngoại. Khi viên bi đi qua cảm biến, tín hiệu sẽ thay đổi, từ đó giúp hệ thống đếm số vòng quay hoặc xác định vị trí.</p>
+            <div class="image-container"><img src="cam-bien-vat-can-hong-ngoai-fm52-5.jpg" alt="Cảm biến hồng ngoại"></div>
+            <ul>
+                <li><a href="https://www.instructables.com/How-to-Use-the-IR-Obstacle-Avoidance-Sensor-on-Ard/" target="_blank">👉 Hướng dẫn sử dụng IR</a></li>
+            </ul>
 
-    <section class="member-images">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/tyvua.png" alt="Thành viên 1">
-                </div>
-                <div class="flip-card-back">
-                    <p>Thông tin Thành viên 1</p>
-                </div>
-            </div>
+            <h4>🟨 Cảm Biến Ánh Sáng (Light Sensor)</h4>
+            <p>Đây là loại cảm biến giúp đo độ sáng môi trường. Có thể dùng để bật/tắt đèn trang trí tự động khi trời tối hoặc khi người dùng đến gần thiết bị.</p>
+            <div class="image-container"><img src="1551516361-1206687423-module-c-m-bi-n-anh-sang-light-sensor.png" alt="Cảm biến ánh sáng"></div>
+            <ul>
+                <li><a href="https://create.arduino.cc/projecthub/ansh2919/arduino-light-sensor-77b9f1" target="_blank">👉 Cách hoạt động & lắp đặt</a></li>
+            </ul>
+
+            <h4>🔴 Đèn LED</h4>
+            <p>Đèn LED không chỉ là yếu tố trang trí, mà còn là tín hiệu trạng thái – ví dụ như khi có bi lăn qua, đèn nhấp nháy báo hiệu cho người dùng. Bạn có thể lập trình các hiệu ứng ánh sáng rất thú vị với Arduino!</p>
+            <div class="image-container"><img src="download.jpg" alt="Đèn LED"></div>
+            <ul>
+                <li><a href="https://electronics.howstuffworks.com/led.htm" target="_blank">👉 Hướng dẫn lập trình LED</a></li>
+            </ul>
+
+            <h4>🔵 Bộ Vi Điều Khiển Arduino Uno</h4>
+            <p>Trái tim của toàn bộ dự án! Arduino kết nối và điều khiển tất cả các cảm biến, relay và đèn LED, xử lý logic điều kiện và gửi tín hiệu phù hợp để tạo nên một vòng quay tự động hóa hoàn chỉnh.</p>
+            <div class="image-container"><img src="ABX00021_SPL.jpg" alt="Arduino Uno"></div>
+            <ul>
+                <li><a href="https://www.arduino.cc/en/Tutorial/HomePage" target="_blank">👉 Học Arduino từ cơ bản</a></li>
+            </ul>
         </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/tyvua.png" alt="Thành viên 2">
-                </div>
-                <div class="flip-card-back">
-                    <p>Thông tin Thành viên 2</p>
-                </div>
-            </div>
+
+        <div class="advertisement">
+            🚀 Khám phá đồ chơi STEM sáng tạo: <strong>Vòng Quay Bi Sắt</strong> tích hợp Arduino và cảm biến IoT! Một dự án tuyệt vời dành cho học sinh, sinh viên, người yêu công nghệ, và cả những bạn trẻ đam mê sáng chế. <br><br>🛒 Đặt hàng ngay để bắt đầu hành trình lập trình và chế tạo của bạn!
         </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/tyvua.png" alt="Thành viên 3">
-                </div>
-                <div class="flip-card-back">
-                    <p>Thông tin Thành viên 3</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/tyvua.png" alt="Thành viên 4">
-                </div>
-                <div class="flip-card-back">
-                    <p>Thông tin Thành viên 4</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/tyvua.png" alt="Thành viên 5">
-                </div>
-                <div class="flip-card-back">
-                    <p>Thông tin Thành viên 5</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/tyvua.png" alt="Thành viên 6">
-                </div>
-                <div class="flip-card-back">
-                    <p>Thông tin Thành viên 6</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <footer>
-        <p>Địa chỉ: Số 123, Đường ABC, Thành phố XYZ</p>
-        <p>Tên dự án: Dự án ABC</p>
-        <p>Giảng viên hướng dẫn: Thầy Nguyễn Văn A</p>
-        <p>Số điện thoại: 0123 456 789</p>
+        🔧 Dự án EXE201 - Nhóm 3 - Invertor Lab | 📧 Email: inventerlab@gmail.com
     </footer>
-
-    <script>
-        function showInfo() {
-            alert("Thông tin về nhóm sẽ được hiển thị tại đây.");
-        }
-        
-        function showMovies() {
-            alert("Danh sách phim sẽ được hiển thị tại đây.");
-        }
-
-        function showMembers() {
-            alert("Danh sách thành viên sẽ được hiển thị tại đây.");
-        }
-    </script>
 </body>
 </html>
